@@ -1,25 +1,25 @@
-# vue-image-uploader
+# vue-image-cropper
 Image uploader and cropper for Vue.js
 
 ## Installation
 
 NPM:
 ```bash
-npm install --save vue-image-uploader
+npm install --save vue-image-cropper
 ```
 
 ## Usage
 ```html
 <template>
-  <vue-image-uploader></vue-image-uploader> 
+  <vue-image-cropper></vue-image-cropper> 
 </template>
 
 <script>
- import VueImageUploader from 'vue-image-uploader';
+ import VueImageCropper from 'vue-image-cropper';
  
  export default {
    components: {
-     VueImageUploader
+     VueImageCropper
    }
  };
 </script>

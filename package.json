@@ -1,5 +1,5 @@
 {
-  "name": "vue-image-uploader",
+  "name": "vue-image-cropper",
   "version": "1.0.0",
   "description": "Image uploader and cropper for Vue.js",
   "main": "index.js",
