@@ -1,0 +1,30 @@
+{
+  "name": "vue-image-uploader",
+  "version": "1.0.0",
+  "description": "Image uploader and cropper fro Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elonsoft/vue-image-uploader.git"
+  },
+  "keywords": [
+    "cropper",
+    "vue",
+    "image"
+  ],
+  "author": "Elonsoft LLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elonsoft/vue-image-uploader/issues"
+  },
+  "homepage": "https://github.com/Elonsoft/vue-image-uploader#readme",
+  "dependencies": {
+    "attr-accept": "^1.1.0",
+    "cropperjs": "^1.0.0",
+    "smartcrop": "^1.1.1",
+    "vue-simple-spinner": "^1.2.7"
+  }
+}
