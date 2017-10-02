@@ -17,6 +17,7 @@
       :locales="locales"
       @image-selected="imageSelected">
     </upload-form>
+    <flash-message type="status"></flash-message>
   </div>
 </template>
 
@@ -24,6 +25,7 @@
   import accept from 'attr-accept';
   import UploadForm from './UploadForm.vue';
   import Preview from './Preview.vue';
+  import FlashMessage from './FlashMessage.vue';
 
   export default {
     name: 'vue-image-uploader',
@@ -55,6 +57,12 @@
             width: 0
           }
         }
+      },
+      /**
+       * uploading, error, success
+       */
+      status: {
+        type: String
       }
     },
     data() {
@@ -113,7 +121,8 @@
     },
     components: {
       UploadForm,
-      Preview
+      Preview,
+      FlashMessage
     }
   }
 </script>
@@ -121,5 +130,6 @@
 <style lang="scss" scoped>
   .vue-image-uploader {
     overflow: hidden;
+    position: relative;
   }
 </style>
