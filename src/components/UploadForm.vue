@@ -52,7 +52,7 @@ export default {
       e.preventDefault();
       e.stopPropagation();
 
-      this.file = e.dataTransfer.files[0];
+      this.image = e.dataTransfer.files[0];
       this.isDragging = false;
     },
 
