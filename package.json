@@ -1,6 +1,6 @@
 {
   "name": "vue-image-cropper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Image uploader and cropper for Vue.js",
   "main": "./dist/index.js",
   "scripts": {
