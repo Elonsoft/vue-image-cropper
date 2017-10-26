@@ -33,7 +33,6 @@
           </actions>
           <div class="modal-actions">
             <button class="modal-actions__btn" @click="close">{{ locales.cancel }}</button>
-            <button class="modal-actions__btn modal-actions__btn_primary" @click="cropImage">{{ locales.confirm }}</button>
           </div>
         </div>
       </div>
