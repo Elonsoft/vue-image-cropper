@@ -48,7 +48,6 @@
         :src="image"
         alt="Source Image"
         :ready="cropperReady"
-        :crop="imageAutoCropped"
         :img-style="{ width: '500px', height: '500px' }"
       ></vue-cropper>
     </div>
@@ -138,13 +137,6 @@ export default {
     },
     cropperReady() {
       this.processing = false;
-    },
-    imageAutoCropped() {
-      const { height, width } = this.cropOptions;
-      const croppedImage = this.$refs.cropper
-        .getCroppedCanvas({ height, width })
-        .toDataURL();
-      this.imageCropped(croppedImage);
     },
     imageCropped(image) {
       this.croppedImage = image;
