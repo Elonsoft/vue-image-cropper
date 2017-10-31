@@ -1,2 +1,2 @@
-import VueImageUploader from './components/VueImageUploader.vue';
-export default VueImageUploader;
+import VueImageCropper from './components/VueImageCropper.vue';
+export default VueImageCropper;
