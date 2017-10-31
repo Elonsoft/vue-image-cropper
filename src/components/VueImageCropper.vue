@@ -1,5 +1,5 @@
 <template>
-  <div :style="[containerSize, styles]" class="vue-image-uploader">
+  <div :style="[containerSize, styles]" class="vue-image-cropper">
     <preview
       v-if="image"
       :auto-crop="autoCrop"
@@ -26,7 +26,7 @@
   import Preview from './Preview.vue';
 
   export default {
-    name: 'vue-image-uploader',
+    name: 'vue-image-cropper',
     props: {
       path: { type: String },
       accept: { default: '*' },
@@ -78,6 +78,12 @@
         }
       }
     },
+    watch: {
+      path() {
+        this.image = this.path;
+        this.autoCrop = !this.path;
+      }
+    },
     methods: {
       imageSelected(file) {
         if (this.accept !== '*' && !accept(file, this.accept) || !accept(file, 'image/*')) {
@@ -119,7 +125,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .vue-image-uploader {
+  .vue-image-cropper {
     overflow: hidden;
   }
 </style>
