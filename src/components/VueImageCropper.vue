@@ -74,7 +74,8 @@
         width = width || 600;
         return {
           height: `${height}px`,
-          width: `${width}px`
+          width: `${100}%`,
+          maxWidth: `${width}px`
         }
       }
     },
